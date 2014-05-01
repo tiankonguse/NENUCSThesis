@@ -1,12 +1,14 @@
 # 国内大学毕业论文LaTeX模板集合
 
+
+
 薛瑞尼的清华大学学位论文LaTeX模板
 
 http://sourceforge.net/projects/thuthesis/
 
 北大论文文档 LaTeX 模板 pkuthss v1.2 beta
 
-http://bbs.pku.edu.cn/bbs/bbstcon.php?board=MathTools&threadid=11364449
+https://code.google.com/p/caspervector/
 
 刘本源的国防科学技术大学研究生学位论文LaTeX模板
 
@@ -15,7 +17,7 @@ http://code.google.com/p/nudtpaper/
  
 南开大学学位论文LaTeX模板（孙文昌老师）
 
-http://202.113.29.3/~sunwch/tex/index.htm
+https://code.google.com/p/kongnian/
 
  
 
@@ -39,7 +41,7 @@ http://www.ctex.org/PackageCASthesis
 
 西安交通大学博士学位论文文档类：xjtuthesis
 
-http://bbs.chinatex.org/forum.php?mod=viewthread&tid=1464&extra=page=1
+https://code.google.com/p/xjtuthesis/
 
 北京邮电大学模板地址：
 
@@ -54,7 +56,9 @@ http://code.google.com/p/latex-bupt/
 
 东北师范大学学位论文LaTeX模板
 
-http://code.google.com/p/nenuthesis/
+CS: https://github.com/tiankonguse/NENUCSThesis/
+
+SE: http://code.google.com/p/nenuthesis/
 
 南京大学模板地址
 
@@ -78,7 +82,7 @@ http://code.google.com/p/seuthesis/
 
 上海大学研究生(博硕)学位论文LaTeX文档类shuthesis模板
 
-http://bbs.chinatex.org/forum.php?mod=viewthread&tid=4977
+http://blog.lehu.shu.edu.cn/shuishousong/A209370.html
 
 中国科技大学本科 硕士 博士论文模板 更新地址
 
@@ -144,4 +148,12 @@ http://code.google.com/p/ntust-thesis/
 http://exciton.eo.yzu.edu.tw/~lab/latex/latex_note.html
 
 其他知名高校没有更新网址的，可以到http://bbs.chinatex.org/forum.php?mod=viewthread&tid=3345&extra=page=1 去下载原来的版本。如武汉大学，桂林电子科技大学，南京师范大学等
+
+
+
+# history
+
+* 2014-05-01 \\
+    大部分链接 tiankonguse 尽量修改为一些有版本控制的网站上，这样一般可以永久保存。\\
+    对于在bbs 和 论坛上的链接，会慢慢的被清理掉。\\
 
