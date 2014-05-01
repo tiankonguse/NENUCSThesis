@@ -147,7 +147,6 @@ http://code.google.com/p/ntust-thesis/
 
 http://exciton.eo.yzu.edu.tw/~lab/latex/latex_note.html
 
-其他知名高校没有更新网址的，可以到http://bbs.chinatex.org/forum.php?mod=viewthread&tid=3345&extra=page=1 去下载原来的版本。如武汉大学，桂林电子科技大学，南京师范大学等
 
 
 
