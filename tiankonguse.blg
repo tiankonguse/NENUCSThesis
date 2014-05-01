@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: tiankonguse.aux
+The style file: plain.bst
+A level-1 auxiliary file: pages/absc.aux
+A level-1 auxiliary file: pages/abse.aux
+A level-1 auxiliary file: pages/intro.aux
+A level-1 auxiliary file: pages/relateworks.aux
+A level-1 auxiliary file: pages/chap03.aux
+Illegal, another \bibstyle command---line 25 of file tiankonguse.aux
+ : \bibstyle
+ :          {plain}
+I'm skipping whatever remains of this command
+Database file #1: ref/refs.bib
+Warning--empty journal in thuthesis-website
+Warning--empty year in thuthesis-website
+Warning--empty journal in acm-proceedings-templates
+Warning--empty year in acm-proceedings-templates
+You've used 4 entries,
+            2118 wiz_defined-function locations,
+            520 strings with 4471 characters,
+and the built_in function-call counts, 935 in all, are:
+= -- 81
+> -- 39
+< -- 0
++ -- 18
+- -- 12
+* -- 53
+:= -- 172
+add.period$ -- 10
+call.type$ -- 4
+change.case$ -- 17
+chr.to.int$ -- 0
+cite$ -- 8
+duplicate$ -- 44
+empty$ -- 79
+format.name$ -- 12
+if$ -- 185
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 6
+newline$ -- 21
+num.names$ -- 8
+pop$ -- 31
+preamble$ -- 1
+purify$ -- 14
+quote$ -- 0
+skip$ -- 24
+stack$ -- 0
+substring$ -- 22
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 4
+while$ -- 8
+width$ -- 5
+write$ -- 39
+(There was 1 error message)

@@ -1,0 +1,21 @@
+\begin{thebibliography}{1}
+
+\bibitem{companion}
+Michel Goosens, Frank Mittelbach, and Alexander Samarin.
+\newblock {\em The {\LaTeX} Companion}.
+\newblock Addison-Wesley Publishing Company, Reading, MA, 1994.
+
+\bibitem{tex}
+Donald~E. Knuth.
+\newblock {\em The {\TeX} Book}.
+\newblock Addison-Wesley Publishing Company, Reading, MA, 15th edition, 1989.
+
+\bibitem{thuthesis-website}
+Tsinghua University Thesis~LaTeX Template.
+\newblock http://thuthesis.sourceforge.net/.
+
+\bibitem{acm-proceedings-templates}
+ACM SIG~Proceedings Templates.
+\newblock http://www.acm.org/sigs/publications/proceedings-templates.
+
+\end{thebibliography}
