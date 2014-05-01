@@ -11,6 +11,8 @@
 *.xcp
 *.toc
 *.bib
+*.bbl
+*.blg
 *.cls
 *.bak
 *.nnl
