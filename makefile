@@ -61,7 +61,6 @@ again:
 clean:
 	rm -rf tiankonguse.dvi
 	rm -rf tiankonguse.ps
-	rm -rf tiankonguse.aux
 	rm -rf tiankonguse.log
 	rm -rf tiankonguse.bbl
 	rm -rf tiankonguse.blg
