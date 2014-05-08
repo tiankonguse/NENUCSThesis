@@ -1,22 +1,10 @@
-###############################################################################
-#
-# NOTES:
-# 
-# 	- just typing 'make' will run latex/dvips/ps2pdf to produce a PDF.
-#
-# 	- Sometimes, when cross-references change, you need to run 'latex' again.
-# 	Typing 'make' again won't work because the pdf will be up to date.  To get
-# 	around this problem, just type 'make again' and run latex again.  You'll
-# 	need to type 'make' again to run dvips/ps2pdf..
-#
-###############################################################################
-
 LATEX=xelatex
 DVIPS=dvips
 PS2PDF=ps2pdf
 BIBTEX=bibtex
 
-LATEX_OPTS=-interaction=nonstopmode
+#LATEX_OPTS=-interaction=nonstopmode
+LATEX_OPTS=
 DVIPS_OPTS=-q
 PS2PDF_OPTS=-dSubsetFonts=true -dEmbedAllFonts=true
 BIBTEX_OPTS=
@@ -25,46 +13,33 @@ BIBTEX_OPTS=
 
 all: tiankonguse.pdf
 
-tiankonguse.pdf : tiankonguse.ps
-	$(PS2PDF) $(PS2PDF_OPTS) $^
+# one
+# The first compile finds all the cite commands and makes
+# a list of them in the .aux file, and takes note of the 
+# bibliography style.
 
-tiankonguse.ps: tiankonguse.dvi
-	$(DVIPS) $(DVIPS_OPTS) $^
+# two
+# Then bibtex processes the aux file and using the bibliography style, and 
+# the list of citations creates a .bbl file which contains the bibliography.
 
-tiankonguse.dvi: tiankonguse.tex
+# three
+# The next latex compile doesn't resolve the references either, 
+# but reads the .bbl file and keeps track of the citations.
+
+# four
+# Finally the last latex compile resolves all the references. 
+
+tiankonguse.pdf : tiankonguse.tex
 	$(LATEX) $(LATEX_OPTS) $^ 
-	
-	@if(grep "There were undefined references" tiankonguse.log > /dev/null);\
-	then \
-		$(BIBTEX) tiankonguse; \
-		$(LATEX) $(LATEX_OPTS) tiankonguse.tex; \
-	fi
-	
-	@if(grep "Rerun" tiankonguse.log > /dev/null);\
-	then \
-		$(LATEX) $(LATEX_OPTS) tiankonguse.tex;\
-	fi
-	rm -f tiankonguse.log
-	$(LATEX) $(LATEX_OPTS) $^ 
-
-references.bbl: ./ref/refs.bib
-	if [ -n tiankonguse.aux ]; \
-	then \
-		$(LATEX) $(LATEX_OPTS) tiankonguse.tex;\
-	fi
 	$(BIBTEX) tiankonguse
-
-again:
-	$(LATEX) $(LATEX_OPTS) tiankonguse.tex
-
+	$(BIBTEX) tiankonguse
+	$(LATEX) $(LATEX_OPTS) $^ 
+	$(LATEX) $(LATEX_OPTS) $^ 
+	
+again:tiankonguse.tex
+	$(LATEX) $(LATEX_OPTS) $^ 
 
 clean:
-	rm -rf tiankonguse.dvi
-	rm -rf tiankonguse.ps
-	rm -rf tiankonguse.log
-	rm -rf tiankonguse.bbl
-	rm -rf tiankonguse.blg
-	rm -rf tiankonguse.toc
-	rm -rf tiankonguse.out
-
+	rm -rf *.dvi *.ps *.log *.bbl *.blg *.toc *.out *.aux  *.lof *.lot
+	rm -rf ./pages/*.bbl ./pages/*.blg ./pages/*.aux
 

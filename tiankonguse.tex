@@ -1,59 +1,54 @@
+\documentclass[zhcn]{nenuthesis}
 % tiankonguse <i@tiankonguse.com>
 %
-\documentclass[zhcn]{nenuthesis}
-
 \setcounter{secnumdepth}{4}
-
+%
 % 定义所有的eps文件在 figures 子目录下
 \graphicspath{{figures/}}
-
+%
 \begin{document}
-  %论文题目：{中文}{英文}
-  \nstitle{中外合作办学专栏}{foreign cooperation in running schools colum}
-  %作者：{中文姓名}{英文}{学号}
-  \nsauthor{袁小康}{Xiaokang Yuan}{1272410021}
-  %指导教师：{导师中文名}{导师英文名}
-  \nsmentor{王建中}{Jianzhong Wang}
-  %专业信息：{专业名称}{年级}
-  \nsmajor{计算机科学与技术专业}{2010}
-  %学院信息：{学院中文}{学院英文}{主题}
-  \nscollege{计算机与科学信息技术学院}{School of Computer Science and Information Technology}{}
-  %日期：{Submitted Date}
-  \nsdate{May 1, 2014}
-
-%==============================================================
-
-  %封面
-  \input{pages/cover}
-
-  \frontmatter   
-  \pagenumbering{Roman}
-
-  %中文摘要
-  \include{pages/absc}
-  %英文摘要
-  \include{pages/abse}
-
-  %目次页
-  \chaptermark{目录}
-  \addcontentsline{toc}{chapter}{目录}
-  \tableofcontents
-  \mainmatter
-
-  % 开始正文 -----------
-
-  % 绪论 & 相关工作 & 引言 
-  \include{pages/intro}
-
-  \include{pages/relateworks}
-
-  % 第三章 样本测试
-  \include{pages/chap03}
-
-
-  \backmatter %结束章节自动编号
-
-\bibliographystyle{plain}
+%\inputencoding{utf8}
+%
+% include message
+\include{pages/message}
+% cover
+%\include{pages/covere}
+\include{pages/coverc}
+%
+\frontmatter
+\pagenumbering{Roman}
+%
+%中文摘要
+\include{pages/absc}
+%
+%英文摘要
+\include{pages/abse}
+%
+% 目录
+\chaptermark{目录}
+\addcontentsline{toc}{chapter}{目录}
+\tableofcontents
+%\listoffigures
+%\listoftables
+%
+%
+\clearpage
+%
+\mainmatter
+% 开始正文 -----------
+%
+% 绪论 & 相关工作 & 引言 
+\include{pages/intro}
+%
+\include{pages/relateworks}
+%
+% 第三章 样本测试
+\include{pages/chap03}
+\include{pages/chap04}
+%
+\backmatter %结束章节自动编号
+%
+%\bibliographystyle{plain}
 \bibliography{ref/refs}
 \end{document}
-
+%
